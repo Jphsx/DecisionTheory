@@ -1,0 +1,61 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage[margin=0.6in]{geometry}
+\usepackage{fancyhdr}
+ 
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{Justin Anguiano}
+\lhead{Math 874 HW-4}
+\rfoot{\thepage}
+\begin{document}
+
+Part-1 Manual calculation of metrics\\
+
+\begin{verbatim}
+TF version 2.1.0
+pre training evaluate
+30/30 - 0s - loss: 2.3010 - accuracy: 0.1667
+begin fit
+Train on 100 samples
+Epoch 1/3
+ 32/100 [========>.....................] - ETA: 1s - loss: 2.2511 - accuracy: 0.100/100 [==============================] - 1s 6ms/sample - loss: 2.1634 - accuracy: 0.2200
+Epoch 2/3
+ 32/100 [========>.....................] - ETA: 0s - loss: 1.4021 - accuracy: 0.100/100 [==============================] - 0s 539us/sample - loss: 1.3313 - accuracy: 0.7100
+Epoch 3/3
+ 32/100 [========>.....................] - ETA: 0s - loss: 1.0372 - accuracy: 0.100/100 [==============================] - 0s 599us/sample - loss: 0.8196 - accuracy: 0.8800
+post training evaluate
+30/30 - 0s - loss: 0.9957 - accuracy: 0.7667
+calling predict
+calculating accuracy from prediction
+--categorical accuracy s.t. succesful categorization implies correct label takes max probability in prediction array--
+accuracy =  0.7666666666666667
+calculating loss
+-- mean sparse categorical cross entropy --
+loss = -0.9636026245932425
+
+
+\end{verbatim}
+
+Part-2 mnist evaluation\\
+
+\begin{verbatim}
+Epoch 1/2 - loss: 8.26848030090332 - accuracy: 0.4842333197593689
+Epoch 2/2 - loss: 7.34914493560791 - accuracy: 0.5426499843597412
+test evaluation
+accuracy: tf.Tensor(0.5413, shape=(), dtype=float32)
+
+\end{verbatim}
+
+Part-3 Architecture testing
+\begin{verbatim}
+aas343
+\end{verbatim}
+
+
+
+
+\end{document}
